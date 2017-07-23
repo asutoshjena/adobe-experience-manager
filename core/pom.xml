@@ -39,12 +39,16 @@
                 <extensions>true</extensions>
                 <configuration>
                     <instructions>
-                        <!--
+                        <Export-Package>
+                        	com.fasterxml.jackson.*
+                        </Export-Package>
+                        <Import-Package>
+                            javax.inject;version=0.0.0,*
+                            com.day.cq.commons;version="[5.7,7)"
+                        </Import-Package>
                         <Embed-Dependency>
-                            artifactId1,
-                            artifactId2;inline=true
+                            jackson-databind;scope=compile|runtime
                         </Embed-Dependency>
-                        -->
                         <Sling-Model-Packages>
                             com.aem.core
                         </Sling-Model-Packages>
