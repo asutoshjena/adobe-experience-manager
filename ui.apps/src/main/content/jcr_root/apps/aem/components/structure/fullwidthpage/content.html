@@ -1,5 +1,13 @@
 <div class="container-fluid">
-  <h1>My First Bootstrap Page</h1>      
-  <p>This part is inside a .container-fluid class.</p> 
-  <p>The .container-fluid class provides a full width container, spanning the entire width of the viewport.</p>           
+    <header>
+        <sly data-sly-resource="${@path='header', resourceType='aem/components/structure/header'}" />
+    </header>
+</div>
+<div class="container-fluid">
+    <sly data-sly-resource="${@path='content', resourceType='wcm/foundation/components/parsys'}" />
+</div>
+<div class="container-fluid">
+    <footer>
+        <sly data-sly-resource="${@path='footer', resourceType='aem/components/structure/footer'}" />
+    </footer>
 </div>
