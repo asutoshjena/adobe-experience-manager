@@ -1,2 +1,3 @@
-
-script.js
+#base=js
+jquery.min.js
+bootstrap.min.js
