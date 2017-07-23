@@ -103,6 +103,13 @@
             <groupId>org.osgi</groupId>
             <artifactId>org.osgi.compendium</artifactId>
         </dependency>
+        <dependency>
+               <groupId>com.adobe.aem</groupId>
+               <artifactId>uber-jar</artifactId>
+               <version>6.3.0</version>
+               <classifier>obfuscated-apis</classifier>
+               <scope>provided</scope>
+        </dependency>
         <!-- Other Dependencies -->
         <dependency>
             <groupId>org.slf4j</groupId>

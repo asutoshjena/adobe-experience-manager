@@ -27,3 +27,4 @@ cq5dam.*
 generated
 
 src/main/content/META-INF/vault/properties.xml
+*.html.dir/.content.xml
