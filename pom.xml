@@ -31,10 +31,10 @@
     </modules>
 
     <properties>
-        <aem.host>localhost</aem.host>
-        <aem.port>7502</aem.port>
-        <aem.publish.host>localhost</aem.publish.host>
-        <aem.publish.port>7503</aem.publish.port>
+        <aem.host>${AEM.HOST}</aem.host>
+        <aem.port>${AEM.PORT}</aem.port>
+        <aem.publish.host>${AEM.HOST}</aem.publish.host>
+        <aem.publish.port>${AEM.PORT}</aem.publish.port>
         <sling.user>admin</sling.user>
         <sling.password>admin</sling.password>
         <vault.user>admin</vault.user>
@@ -417,13 +417,15 @@
             <dependency>
                <groupId>com.adobe.aem</groupId>
                <artifactId>uber-jar</artifactId>
-               <version>6.3.0</version>
-               <!-- for AEM6.1 use this version     : <version>6.1.0</version> -->
+               <version>6.3.1</version>
+               <classifier>obfuscated-apis</classifier>
+               <scope>provided</scope>
+			   <!-- for AEM6.1 use this version     : <version>6.1.0</version> -->
                <!-- for AEM6.1 SP1 use this version : <version>6.1.0-SP1-B0001</version> -->
                <!-- for AEM6.1 SP2 use this version : <version>6.1.0-SP2</version> -->
                <!-- for AEM6.2 use this version     : <version>6.2.0</version> -->
-               <classifier>obfuscated-apis</classifier>
-               <scope>provided</scope>
+			   <!-- for AEM6.3 use this version     : <version>6.3.0</version> -->
+			   <!-- for AEM6.3 SP1 use this version : <version>6.3.1</version> -->
            	</dependency>
             <!-- Logging Dependencies -->
             <dependency>
